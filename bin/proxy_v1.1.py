@@ -60,6 +60,7 @@ def main():
                 # os.system('pause')
             else:
                 try:
+                    clear_proxy()
                     ip = instruction_dic[no]
                     set_proxy(ip)
                     print 'set %s success'%(ip)
