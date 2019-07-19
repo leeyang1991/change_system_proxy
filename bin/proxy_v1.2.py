@@ -61,7 +61,7 @@ def clear_proxy():
 
 def set_proxy(ip):
     proxyIP = ip
-    cmd = 'sysproxy.exe global '+proxyIP
+    cmd = 'sysproxy.exe global '+proxyIP+' localhost;192.*;127.*'
     os.system(cmd)
 
 def main():
